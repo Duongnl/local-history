@@ -48,16 +48,18 @@
 /* duong css */
 @media (max-width: 797px) {
   .text-header {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .img-header {
-    display: none;
+    /* display: none; */
+    width: 70px;
+    height: 46px;
   }
 
   .div-header {
 
-    justify-content: center;
+    /* justify-content: center; */
 
   }
 
