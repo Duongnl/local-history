@@ -1,7 +1,8 @@
 
 import './App.css'
 import ContentPage1 from './components/page1/ContenPage1'
-import Header from './components/share/header'
+import HeaderWeb from './components/share/HeaderWeb'
+
 
 
 
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Header/>
+      <HeaderWeb/>
       <ContentPage1/>
 
     </>
