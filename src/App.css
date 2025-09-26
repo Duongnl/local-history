@@ -44,3 +44,54 @@
 .read-the-docs {
   color: #888;
 }
+
+/* duong css */
+@media (max-width: 797px) {
+  .text-header {
+    font-size: 13px;
+  }
+
+  .img-header {
+    display: none;
+  }
+
+  .div-header {
+
+    justify-content: center;
+
+  }
+
+  .text1 {
+    font-size: 18px;
+  }
+
+  .text2 {
+    font-size: 15px;
+  }
+
+  .text3 {
+    font-size: 12px;
+    margin-top: 5px;
+    height: 20px;
+  }
+
+  .image-student{
+    width: 100px;
+    height: 100px;
+  }
+
+   .image-map{
+    width: 120px;
+    height: 199px;
+  }
+
+  .div-student{
+    margin-top: 35px;
+  }
+
+  .contentpage1{
+    margin-top: 20px;
+  }
+}
+
+/* end duong css */
