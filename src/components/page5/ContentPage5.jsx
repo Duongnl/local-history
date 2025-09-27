@@ -519,6 +519,59 @@ const ContentPage5 = () => {
         Bài hát 🎵
       </motion.div>
 
+
+      <motion.h2
+        className="text-2xl md:text-[30px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        Em yêu mái trường Đoàn Thị Điểm
+      </motion.h2>
+      <div className="w-full max-w-full flex flex-col md:flex-row mb-8 md:mb-12">
+
+        {/* Right Content */}
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
+        >
+          <div className="text-left">
+
+            <p className="text-base md:text-[18px] leading-relaxed mb-4">
+              Ca khúc đánh dấu bước chuyển mình vào kỷ nguyên mới của đất nước – thời kỳ hội nhập, phát triển mạnh mẽ, trong bối cảnh thực hiện mô hình chính quyền đô thị, đổi mới toàn diện giáo dục và xã hội.
+            </p>
+
+          </div>
+        </motion.div>
+
+        {/* Left Image */}
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="w-full md:w-1/2 px-4 md:px-6 mb-6 md:mb-0"
+        >
+          <div className="relative rounded-lg shadow-xl w-full h-[400px] md:h-[600px]">
+            <img
+              className="w-full h-4/5 md:h-5/6 rounded-t-lg object-contain"
+              src="./emyeumaitruongdoanthidiem.jpg"
+              alt="Bản đồ di tích"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 text-center text-black p-2 md:p-3 h-1/5 md:h-1/6 rounded-b-lg flex flex-col justify-center">
+
+              <p className="text-xs">Em yêu mái trường Đoàn Thị Điểm</p>
+            </div>
+          </div>
+        </motion.div>
+
+
+      </div>
+
       <motion.h2
         className="text-2xl md:text-[30px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
         initial={{ y: -50, opacity: 0 }}
@@ -572,57 +625,7 @@ const ContentPage5 = () => {
         </motion.div>
       </div>
 
-      <motion.h2
-        className="text-2xl md:text-[30px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
-        initial={{ y: -50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.2 }}
-      >
-        Em yêu mái trường Đoàn Thị Điểm
-      </motion.h2>
-      <div className="w-full max-w-full flex flex-col md:flex-row mb-8 md:mb-12">
 
-        {/* Right Content */}
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.2 }}
-          className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
-        >
-          <div className="text-left">
-
-            <p className="text-base md:text-[18px] leading-relaxed mb-4">
-              Ca khúc đánh dấu bước chuyển mình vào kỷ nguyên mới của đất nước – thời kỳ hội nhập, phát triển mạnh mẽ, trong bối cảnh thực hiện mô hình chính quyền đô thị, đổi mới toàn diện giáo dục và xã hội.
-            </p>
-
-          </div>
-        </motion.div>
-
-        {/* Left Image */}
-        <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.2 }}
-          className="w-full md:w-1/2 px-4 md:px-6 mb-6 md:mb-0"
-        >
-          <div className="relative rounded-lg shadow-xl w-full h-[400px] md:h-[600px]">
-            <img
-              className="w-full h-4/5 md:h-5/6 rounded-t-lg object-contain"
-              src="./emyeumaitruongdoanthidiem.jpg"
-              alt="Bản đồ di tích"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 text-center text-black p-2 md:p-3 h-1/5 md:h-1/6 rounded-b-lg flex flex-col justify-center">
-
-              <p className="text-xs">Em yêu mái trường Đoàn Thị Điểm</p>
-            </div>
-          </div>
-        </motion.div>
-
-
-      </div>
 
       <motion.h2
         className="text-2xl md:text-[30px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
