@@ -46,9 +46,34 @@
 }
 
 /* duong css */
-@media (max-width: 797px) {
+@media (min-width: 768px) {
+  .div-student1 {
+    display: none;
+
+  }
+
+}
+
+/* 1029 */
+
+@media (min-width: 1029px) {
   .text-header {
-    font-size: 10px;
+    font-size: 25px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .text-header {
+    font-size: 11px;
+  }
+
+  .header-mobile{
+    display: block;
+  }
+
+  .navigation{
+   display: none;
   }
 
   .img-header {
@@ -64,38 +89,50 @@
   }
 
   .text1 {
-    font-size: 18px;
+    font-size: 30px;
   }
 
   .text2 {
-    font-size: 15px;
+    font-size: 25px;
   }
 
   .text3 {
-    font-size: 12px;
+    font-size: 20px;
     margin-top: 5px;
     height: 20px;
   }
 
-  .image-student{
-    width: 100px;
-    height: 100px;
+  .image-student {
+    width: 130px;
+    height: 130px;
   }
 
-   .image-map{
-    width: 120px;
-    height: 199px;
+  .div-student1 {
+    justify-content: center;
+    margin-top: 20px;
   }
 
-  .div-student{
+  .image-map {
+ 
+    height: 397px;
+    height: 100%;
+    margin-top: 50px;
+  }
+
+  .div-student {
     margin-top: 35px;
+    display: none;
   }
 
-  .contentpage1{
+  .contentpage1 {
     margin-top: 20px;
   }
   .contentpage5{
     margin: 0;
+  }
+
+  .div-custom {
+    display: flex;
   }
 }
 
