@@ -38,6 +38,12 @@ const Header = () => {
                         </motion.p>
                     </motion.div>
 
+                    <div className='flex gap-4'>
+                        <p className='text-[18px]'>Vị trí địa lý</p>
+                        <p className='text-[18px]'>Trụ sở hành chính</p>
+                        <p className='text-[18px]'>Di tích lịch sử</p>
+                    </div>
+
                     {/* Right side - Logo with animation */}
                     <div
                         className="flex-shrink-0 img-header w-[105px] h-[69px]"
