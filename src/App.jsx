@@ -17,7 +17,7 @@ function App() {
       <ContentPage1/>
      </div>
 
-      {/* <ContentPage5/> */}
+      <ContentPage5/>
     </>
   )
 }
