@@ -259,7 +259,7 @@ const ContentPage5 = () => {
         </div>
       </div>
 
- <motion.h2
+      <motion.h2
         className="text-2xl md:text-[45px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4 mt-6"
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -283,6 +283,9 @@ const ContentPage5 = () => {
                     - Đài tưởng niệm 82 liệt sĩ hy sinh Mậu Thân 1968            </p>
             <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
                     - Nằm trong khuôn viên Đài liệt sĩ quận Tân Phú thuộc phường Tân Phú, thành phố Hồ Chí Minh            </p>
+            <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
+              - Với giá trị lịch sử và ý nghĩa nhân văn sâu sắc, Đài tưởng niệm Liệt sĩ Quận Tân Phú đã trở thành một địa chỉ đỏ, góp phần bồi đắp lòng yêu nước, niềm tự hào dân tộc và ý thức trách nhiệm xây dựng, bảo vệ Tổ quốc trong giai đoạn mới.
+            </p>
           </div>
         </motion.div>
 
@@ -358,6 +361,9 @@ const ContentPage5 = () => {
               <h3 className="text-white text-xl md:text-2xl font-bold mb-2">Di tích lịch sử</h3>
               <p className="text-white/90 text-sm md:text-base">
                 Nhà trưng bày di tích lịch sử Địa Đạo Phú Thọ Hòa
+              </p>
+              <p className="text-white/90 text-sm md:text-base">
+                Địa đạo Phú Thọ Hòa (quận Tân Phú, TP.HCM) là một trong những địa đạo nổi tiếng, được xây dựng từ thời kháng chiến chống Pháp và phát huy vai trò quan trọng trong kháng chiến chống Mỹ. Công trình là minh chứng cho tinh thần kiên cường, sáng tạo của quân và dân Sài Gòn – Gia Định, đồng thời là di tích lịch sử – văn hóa, giáo dục truyền thống yêu nước cho các thế hệ hôm nay.
               </p>
             </div>
           </motion.div>

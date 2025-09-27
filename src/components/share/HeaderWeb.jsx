@@ -46,6 +46,7 @@ const Header = () => {
                         <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Phong tục, món ăn, lễ hội
 </a>
                         <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Bài hát yêu thích</a>
+                        <a href="https://bit.ly/LICHSUDIAPHUONG" >Tài nguyên</a>
                     </div>
 
                     {/* Right side - Logo with animation */}
@@ -56,9 +57,6 @@ const Header = () => {
                         <img src="logohis.png" alt="" />
 
                     </div>
-
-
-
                 </div>
 
                 {/* Decorative elements */}
