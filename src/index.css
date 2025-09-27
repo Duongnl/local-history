@@ -1,6 +1,43 @@
 @import "tailwindcss";
+
+/* Import font SignikaNegative */
+@font-face {
+  font-family: "SignikaNegative";
+  src: url("/font/SignikaNegative-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SignikaNegative";
+  src: url("/font/SignikaNegative-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SignikaNegative";
+  src: url("/font/SignikaNegative-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SignikaNegative";
+  src: url("/font/SignikaNegative-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SignikaNegative";
+  src: url("/font/SignikaNegative-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "SignikaNegative", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
