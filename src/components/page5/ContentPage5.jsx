@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 
 const ContentPage5 = () => {
   return (
-    <div className="w-full max-w-full overflow-x-hidden">
+    <div className="w-full max-w-full overflow-x-hidden ">
       {/* Header Section */}
       <div className="w-full mt-[40px] md:mt-[60px]">
         <motion.div

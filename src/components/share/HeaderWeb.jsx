@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import OverlayMenu from './OverlayMenu';
 
 const Header = () => {
     const textVariants = {
@@ -39,30 +40,39 @@ const Header = () => {
                     </motion.div>
 
                     <div className='flex gap-4'>
-                        <p className='text-[18px]'>Vị trí địa lý</p>
-                        <p className='text-[18px]'>Trụ sở hành chính</p>
-                        <p className='text-[18px]'>Di tích lịch sử</p>
+                        <a href="#vitri" className="text-[18px] navigation cursor-pointer">Vị trí địa lý</a>
+                        <a href="#truso" className="text-[18px] navigation cursor-pointer">Trụ sở hành chính</a>
+                        <a href="#ditich" className="text-[18px]  navigation cursor-pointer">Di tích lịch sử</a>
                     </div>
 
                     {/* Right side - Logo with animation */}
+
                     <div
-                        className="flex-shrink-0 img-header w-[105px] h-[69px]"
+                        className="flex-shrink-0 img-header w-[140px] h-[93px]"
                     >
                         <img src="logohis.png" alt="" />
 
                     </div>
+
+
+
                 </div>
 
                 {/* Decorative elements */}
                 <motion.div
-                    className="mt-4 w-full h-1 bg-gradient-to-r from-red-400 via-yellow-400 to-blue-400 rounded-full"
+                    className="mt-1 w-full h-1 bg-gradient-to-r from-red-400 via-yellow-400 to-blue-400 rounded-full"
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: 1 }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
                 />
 
                 {/* Floating particles effect */}
-   
+
+                <div className="header-mobile hidden fixed top-25 right-0 z-50">
+                    <OverlayMenu />
+                </div>
+
+
             </div>
         </>
     )
