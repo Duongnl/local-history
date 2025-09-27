@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const ContentPage3 = () => {
   return (
-    <div className='min-h-screen py-6 px-2 md:py-20 md:px-4'>
+    <div className='py-6 px-2 md:py-20 md:px-4'>
       {/* Title lớn phía trên với animation nổi bật */}
       <motion.div
         className="text-[32px]  uppercase  sm:text-[16px] md:text-[54px] font-extrabold text-blue-900 text-center mb-4 sm:mb-2 md:mb-8"
@@ -17,7 +17,7 @@ const ContentPage3 = () => {
         }}
         whileHover={{ scale: 1.12, color: "#2563eb" }}
       >
-        Phường tân sân nhì 
+        Phường tân sơn nhì 
       </motion.div>
       
       {/* Thông tin tổng quan */}
