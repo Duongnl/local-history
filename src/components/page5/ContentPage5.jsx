@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 
 const ContentPage5 = () => {
   return (
-    <div className="w-full max-w-full overflow-x-hidden ">
+    <div className="w-full max-w-full overflow-hidden ">
       {/* Header Section */}
       <div className="w-full mt-[40px] md:mt-[60px]">
         <motion.div
@@ -47,6 +47,8 @@ const ContentPage5 = () => {
       >
         ĐÌNH THẦN TÂN SƠN NHÌ
       </motion.h2>
+
+
 
       <div className="w-full max-w-full flex flex-col md:flex-row mb-8 md:mb-12 contentpage5-section1">
         <motion.div
@@ -188,7 +190,119 @@ const ContentPage5 = () => {
           </motion.div>
         </motion.div>
       </div>
+
+
+      <motion.h2
+        className="text-2xl md:text-[45px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        Liệt sĩ Trần Văn Ơn
+      </motion.h2>
+
+      <div className="w-full px-4 md:px-8 py-6 md:py-5">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+
+          {/* Right Image */}
+          <motion.div
+            className="w-full md:w-1/2 flex justify-center"
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+          >
+            {/* <motion.img
+              src="tran-van-on.jpg"
+              alt="Bia tưởng niệm"
+              className="w-auto h-auto  rounded-lg shadow-xl object-contain"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            /> */}
+
+
+            <div className="relative rounded-lg shadow-xl w-full h-full">
+              {/* Bia image background */}
+              <img
+                className='w-full h-4/5 md:h-5/6 rounded-t-lg'
+                src="tran-van-on.jpg"
+                alt="Bia tượng niệm"
+              />
+
+              {/* Caption */}
+              <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 text-center text-black p-2 md:p-3 h-1/5 md:h-1/6 rounded-b-lg flex flex-col justify-center">
+                <p className="text-xs md:text-sm font-medium">Tượng Liệt sĩ Trần Văn Ơn (1931-1950)</p>
+
+              </div>
+            </div>
+
+          </motion.div>
+
+          {/* Left Content */}
+          <motion.div
+            className="w-full md:w-1/2"
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+          >
+
+            <p className="text-base md:text-lg text-gray-700 mb-4">
+              Liệt sĩ Trần Văn Ơn (1931-1950) là học sinh trường Pétrus Ký (nay là Trường Trung học phổ thông chuyên Lê Hồng Phong, Quận 5) bị chính quyền Pháp nổ súng bắn chết trong khi lãnh đạo phong trào biểu tình của học sinh – sinh viên Sài Gòn vào ngày 09-01-1950.
+              Cái chết của liệt sĩ Trần Văn Ơn đã gây tiếng vang lớn, tác động rộng khắp trong phong trào đấu tranh của nhân dân Sài Gòn. Hơn 300 000 người dân Sài Gòn đã xuống đường tham gia và ủng hộ lễ tang của Trần Văn Ơn. Từ đó, ngày 09-01 hằng năm được chọn làm Ngày truyền thống Học sinh - Sinh viên Việt Nam.
+            </p>
+
+          </motion.div>
+
+
+        </div>
+      </div>
+
+         <motion.h2
+        className="text-2xl md:text-[45px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        Địa đạo Phú Thọ Hòa
+      </motion.h2>
+
+
+      {/* Bottom Image Section with Motion */}
+      <div className="w-full px-4 md:px-8 py-8 md:py-2">
+        <motion.div
+          className="w-full max-w-[800px] mx-auto"
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <motion.div
+            className="relative rounded-2xl overflow-hidden shadow-2xl"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <img
+              src="/phuthohoa.jpg"
+              alt="Hình ảnh lịch sử"
+              className="w-full h-auto"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+              <h3 className="text-white text-xl md:text-2xl font-bold mb-2">Di tích lịch sử</h3>
+              <p className="text-white/90 text-sm md:text-base">
+                Nhà trưng bày di tích lịch sử Địa Đạo Phú Thọ Hòa
+              </p>
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+
+
     </div>
+
+
   )
 }
 
