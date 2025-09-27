@@ -43,9 +43,9 @@ const Header = () => {
                         <a href="#vitri" onClick={(e) => { e.preventDefault(); document.querySelector('#vitri').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Thông tin hành chính</a>
                         <a href="#truso" onClick={(e) => { e.preventDefault(); document.querySelector('#truso').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Di tích lịch sử</a>
                         <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Công trình văn hóa</a>
-                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Phong tục, món ăn, lễ hội
+                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Phong tục, món ăn
 </a>
-                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Bài hát yêu thích</a>
+                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Bài hát</a>
                         <a href="https://bit.ly/LICHSUDIAPHUONG" >Tài nguyên</a>
                     </div>
 
