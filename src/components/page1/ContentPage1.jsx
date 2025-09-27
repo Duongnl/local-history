@@ -14,11 +14,11 @@ const ContentPage1 = () => {
                     className="md:basis-4/6 flex  justify-center items-center"
                 >
                     <div className="text-center">
-                        <p className="text-[50px] font-bold text-red-600  text1" >LỊCH SỬ - ĐỊA LÍ 4</p>
+                        <p className="text-[50px] font-bold text-red-600  text1" >CHUYỂN ĐỔI SỐ TRONG GIÁO DỤC LỊCH SỬ ĐỊA PHƯƠNG</p>
                         <p className="text-[35px] text-blue-600 text2">Sau sáp nhập 01/07/2025</p>
                         <p className="mt-[20px] text-[30px] font-bold text-gray-500 text3">
                             <Typewriter
-                                words={['Chào mừng đến với Lịch Sử - Địa Lí 4', 'Giới thiệu về Phường Tân Sơn Nhì', 'Vị trí Địa Lí, trụ sở hành chính, di tích Lịch Sử ']}
+                                words={['Chào mừng đến với trang giáo dục lịch sử địa phương', 'Thông tin hành chính', 'Di tích lịch sử, công trình văn hóa','Phong tục, món ăn, lễ hội','Bài hát được yêu thích','Tin tức']}
                                 loop={0} // 0 = vô hạn
                                 cursor
                                 cursorStyle="|"

@@ -29,20 +29,23 @@ const Header = () => {
                             className="text-[18px] font-bold text-blue-700 tracking-wide text-center text-header"
                             style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.1)' }}
                         >
-                            ĐOÀN PHƯỜNG TÂN SƠN NHÌ
+                            ỦY BAN NHÂN DÂN PHƯỜNG TÂN SƠN NHÌ
                         </motion.p>
                         <motion.p
                             className="text-[18px] font-semibold text-blue-700 tracking-wide text-header"
                             style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.1)' }}
                         >
-                            CHI ĐOÀN TIỂU HỌC ĐOÀN THỊ ĐIỂM
+                           TRƯỜNG TIỂU HỌC ĐOÀN THỊ ĐIỂM
                         </motion.p>
                     </motion.div>
 
                     <div className='flex gap-6'>
-                        <a href="#vitri" onClick={(e) => { e.preventDefault(); document.querySelector('#vitri').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Vị trí địa lý</a>
-                        <a href="#truso" onClick={(e) => { e.preventDefault(); document.querySelector('#truso').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Trụ sở hành chính</a>
-                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Di tích lịch sử</a>
+                        <a href="#vitri" onClick={(e) => { e.preventDefault(); document.querySelector('#vitri').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Thông tin hành chính</a>
+                        <a href="#truso" onClick={(e) => { e.preventDefault(); document.querySelector('#truso').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Di tích lịch sử</a>
+                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Công trình văn hóa</a>
+                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Phong tục, món ăn, lễ hội
+</a>
+                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Bài hát yêu thích</a>
                     </div>
 
                     {/* Right side - Logo with animation */}

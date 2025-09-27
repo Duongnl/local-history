@@ -17,7 +17,7 @@ const ContentPage3 = () => {
         }}
         whileHover={{ scale: 1.12, color: "#2563eb" }}
       >
-      Vị Trí Phường tân sơn nhì 
+      Thông tin hành chính
       </motion.div>
 
 

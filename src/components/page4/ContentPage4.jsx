@@ -47,6 +47,27 @@ const ContentPage4 = () => {
       title: "HỘI ĐỒNG NHÂN DÂN - UBND PHƯỜNG TÂN SƠN NHÌ",
       address: "Số 48 Tân Quý",
     },
+      {
+      img: "img_dtd.jpg",
+      title: "TRƯỜNG TIỂU HỌC ĐOÀN THỊ ĐIỂM",
+      address: "14-16 Trần Văn Ơn",
+    },
+    {
+      img: "img_dangtrancon.jpg",
+      title: "TRƯỜNG TRUNG HỌC CƠ SỞ ĐẶNG TRẦN CÔN",
+      address: "15/29 Cầu Xéo",
+    },
+     {
+      img: "img_tranquangkhai.jpg",
+      title: "TRƯỜNG TRUNG HỌC CƠ SỞ TRẦN QUANG KHẢI",
+      address: "94/3 Nguyễn Thế Truyện",
+    },
+    {
+      img: "img_ttt.jpg",
+      title: "TRƯỜNG TRUNG HỌC CƠ SỞ TÔN THẤT TÙNG",
+      address: "3 Đường D2",
+    },
+   
   ];
 
   return (
@@ -158,7 +179,7 @@ const ContentPage4 = () => {
         transition={{ duration: 0.7, type: "spring", stiffness: 150 }}
         whileHover={!isMobile ? { scale: 1.1, textShadow: "0 0 20px #fff" } : {}}
       >
-        TRỤ SỞ HÀNH CHÍNH
+        CÔNG TRÌNH VĂN HÓA
       </motion.h2>
 
       {/* Offices grid */}

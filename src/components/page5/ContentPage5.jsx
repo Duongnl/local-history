@@ -259,6 +259,71 @@ const ContentPage5 = () => {
         </div>
       </div>
 
+ <motion.h2
+        className="text-2xl md:text-[45px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4 mt-6"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        Đài tưởng niệm
+      </motion.h2>
+
+      {/* Content 3 - Đài tưởng niệm */}
+      <div className="w-full max-w-full flex flex-col md:flex-row mb-8 md:mb-12 contentpage5-section2">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="w-full md:flex-1 flex flex-col px-4 md:px-6 mb-6 md:mb-0 order-2 md:order-1"
+        >
+          <div className="text-left">
+            <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
+                    - Đài tưởng niệm 82 liệt sĩ hy sinh Mậu Thân 1968            </p>
+            <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
+                    - Nằm trong khuôn viên Đài liệt sĩ quận Tân Phú thuộc phường Tân Phú, thành phố Hồ Chí Minh            </p>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="w-full md:flex-1 flex justify-center items-center px-4 md:px-6 order-1 md:order-2"
+        >
+          <motion.div
+            className="w-full max-w-[400px] md:max-w-none h-[300px] md:h-[380px]"
+            animate={{ y: [0, -15, 0] }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              repeatType: "loop",
+              ease: "easeInOut",
+              delay: 0.5
+            }}
+          >
+            <div className="relative rounded-lg shadow-xl w-full h-full">
+              {/* Bia image background */}
+              <img
+                className='w-full h-4/5 md:h-5/6 rounded-t-lg'
+                src="./img_daituongniem.jpg"
+                alt="Bia tượng niệm"
+              />
+
+              {/* Caption */}
+              <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 text-center text-black p-2 md:p-3 h-1/5 md:h-1/6 rounded-b-lg flex flex-col justify-center">
+                <p className="text-xs md:text-sm font-medium">Đài tưởng niệm -</p>
+                <p className="text-xs">(Số 1/3 Trường Chinh)</p>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+              {/* Địa đạo phú thọ hòa */}
          <motion.h2
         className="text-2xl md:text-[45px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
         initial={{ y: -50, opacity: 0 }}
