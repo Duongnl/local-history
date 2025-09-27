@@ -52,8 +52,8 @@
 }
 
 #root{
-   overflow:hidden;
-  overflow-y:auto;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 a {
