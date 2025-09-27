@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <>
-            <div className="w-full  bg-white p-6 rounded-xl shadow-lg border border-gray-200 mt-[10px] ">
+            <div className=" fixed top-0 left-0 w-full z-50 bg-white p-4 rounded-xl shadow-lg border border-gray-200  ">
                 <div className="w-full flex justify-between items-center div-header">
                     {/* Left side - Text with animation */}
                     <motion.div
@@ -25,13 +25,13 @@ const Header = () => {
                         animate="animate"
                     >
                         <motion.p
-                            className="text-[25px] font-bold text-blue-700 tracking-wide text-center text-header"
+                            className="text-[18px] font-bold text-blue-700 tracking-wide text-center text-header"
                             style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.1)' }}
                         >
                             ĐOÀN PHƯỜNG TÂN SƠN NHÌ
                         </motion.p>
                         <motion.p
-                            className="text-[25px] font-semibold text-blue-700 tracking-wide text-header"
+                            className="text-[18px] font-semibold text-blue-700 tracking-wide text-header"
                             style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.1)' }}
                         >
                             CHI ĐOÀN TIỂU HỌC ĐOÀN THỊ ĐIỂM
@@ -40,7 +40,7 @@ const Header = () => {
 
                     {/* Right side - Logo with animation */}
                     <div
-                        className="flex-shrink-0 img-header"
+                        className="flex-shrink-0 img-header w-[105px] h-[69px]"
                     >
                         <img src="logohis.png" alt="" />
 
