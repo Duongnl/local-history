@@ -1,6 +1,6 @@
 
 import './App.css'
-import ContentPage1 from './components/page1/ContenPage1'
+import ContentPage1 from './components/page1/ContentPage1'
 import HeaderWeb from './components/share/HeaderWeb'
 
 
