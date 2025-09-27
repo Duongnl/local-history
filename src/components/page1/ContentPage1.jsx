@@ -18,7 +18,7 @@ const ContentPage1 = () => {
                         <p className="text-[35px] text-blue-600 text2">Sau sáp nhập 01/07/2025</p>
                         <p className="mt-[20px] text-[30px] font-bold text-gray-500 text3">
                             <Typewriter
-                                words={['Chào mừng đến với Lịch Sử - Địa Lí 4', 'Giới thiệu về Phường Tân Sơn Nhì', 'Vị trí Địa Lí, trụ sở hành chính, di tích Lịch sử ']}
+                                words={['Chào mừng đến với Lịch Sử - Địa Lí 4', 'Giới thiệu về Phường Tân Sơn Nhì', 'Vị trí Địa Lí, trụ sở hành chính, di tích Lịch Sử ']}
                                 loop={0} // 0 = vô hạn
                                 cursor
                                 cursorStyle="|"
