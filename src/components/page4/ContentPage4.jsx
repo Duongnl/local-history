@@ -151,7 +151,7 @@ const ContentPage4 = () => {
 
       {/* Section title */}
       <motion.h2
-        className="inline-block bg-red-500 text-white text-2xl md:text-3xl font-bold px-8 py-3 rounded-l-full rounded-r-full shadow-lg"
+        className="inline-block bg-red-500 text-white text-2xl md:text-3xl font-bold px-8 py-3 rounded-l-full rounded-r-full shadow-lg scroll-mt-[160px] mt-[30px]" id='truso' 
         initial={{ scale: 0.5, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         viewport={{ once: false }}
