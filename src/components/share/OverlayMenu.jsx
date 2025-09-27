@@ -7,14 +7,14 @@ export default function OverlayMenu() {
     return (
         <div className="relative">
             {/* Button mở menu */}
-         
-                <button
-                    onClick={() => setOpen(!open)}
-                    className="w-12 h-12 !bg-gray-200 !text-gray-600 !rounded-2xl !shadow-md hover:shadow-lg border border-gray-100 hover:bg-gray-50 transition-all duration-200 flex items-center justify-center text-xl"
-                >
-                    ≡
-                </button>
-            
+
+            <button
+                onClick={() => setOpen(!open)}
+                className="w-12 h-12 !bg-gray-200 !text-gray-600 !rounded-2xl !shadow-md hover:shadow-lg border border-gray-100 hover:bg-gray-50 transition-all duration-200 flex items-center justify-center text-xl"
+            >
+                ≡
+            </button>
+
             {/* Overlay + menu */}
             <AnimatePresence>
                 {open && (
@@ -39,21 +39,33 @@ export default function OverlayMenu() {
                             <a
                                 href="#vitri"
                                 className="text-[18px] cursor-pointer"
-                                onClick={() => setOpen(false)}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.querySelector('#vitri').scrollIntoView({ behavior: 'smooth' });
+                                    setOpen(false);
+                                }}
                             >
                                 Vị trí địa lý
                             </a>
                             <a
                                 href="#truso"
                                 className="text-[18px] cursor-pointer"
-                                onClick={() => setOpen(false)}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.querySelector('#truso').scrollIntoView({ behavior: 'smooth' });
+                                    setOpen(false);
+                                }}
                             >
                                 Trụ sở hành chính
                             </a>
                             <a
                                 href="#ditich"
                                 className="text-[18px] cursor-pointer"
-                                onClick={() => setOpen(false)}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' });
+                                    setOpen(false);
+                                }}
                             >
                                 Di tích lịch sử
                             </a>

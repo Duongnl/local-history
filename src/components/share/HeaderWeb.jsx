@@ -39,10 +39,10 @@ const Header = () => {
                         </motion.p>
                     </motion.div>
 
-                    <div className='flex gap-4'>
-                        <a href="#vitri" className="text-[18px] navigation cursor-pointer">Vị trí địa lý</a>
-                        <a href="#truso" className="text-[18px] navigation cursor-pointer">Trụ sở hành chính</a>
-                        <a href="#ditich" className="text-[18px]  navigation cursor-pointer">Di tích lịch sử</a>
+                    <div className='flex gap-6'>
+                        <a href="#vitri" onClick={(e) => { e.preventDefault(); document.querySelector('#vitri').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Vị trí địa lý</a>
+                        <a href="#truso" onClick={(e) => { e.preventDefault(); document.querySelector('#truso').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Trụ sở hành chính</a>
+                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Di tích lịch sử</a>
                     </div>
 
                     {/* Right side - Logo with animation */}
