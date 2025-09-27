@@ -45,7 +45,7 @@ export default function OverlayMenu() {
                                     setOpen(false);
                                 }}
                             >
-                                Vị trí địa lý
+                                Thông tin hành chính
                             </a>
                             <a
                                 href="#truso"
@@ -56,7 +56,7 @@ export default function OverlayMenu() {
                                     setOpen(false);
                                 }}
                             >
-                                Trụ sở hành chính
+                                Công trình văn hóa
                             </a>
                             <a
                                 href="#ditich"
@@ -69,6 +69,35 @@ export default function OverlayMenu() {
                             >
                                 Di tích lịch sử
                             </a>
+
+                            <a
+                                href="#phongtucmonan"
+                                className="text-[18px] cursor-pointer"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.querySelector('#phongtucmonan').scrollIntoView({ behavior: 'smooth' });
+                                    setOpen(false);
+                                }}
+                            >
+                                Phong tục, món ăn
+                            </a>
+
+                            <a
+                                href="#baihat"
+                                className="text-[18px] cursor-pointer"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.querySelector('#baihat').scrollIntoView({ behavior: 'smooth' });
+                                    setOpen(false);
+                                }}
+                            >
+                               Bài hát
+                            </a>
+
+                            <a href="https://bit.ly/LICHSUDIAPHUONG"  className="text-[18px] cursor-pointer" >Tài nguyên</a>
+
+
+
                         </motion.div>
                     </>
                 )}

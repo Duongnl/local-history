@@ -21,32 +21,34 @@ const Header = () => {
                 <div className="w-full flex justify-between items-center div-header">
                     {/* Left side - Text with animation */}
                     <motion.div
-                        className="flex flex-col space-y-2 "
+                        className="flex flex-col space-y-2 mr-[5px]"
                         variants={textVariants}
                         animate="animate"
                     >
                         <motion.p
-                            className="text-[18px] font-bold text-blue-700 tracking-wide text-center text-header"
+                            className="text-[12px] font-bold text-blue-700 tracking-wide text-center text-header"
                             style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.1)' }}
                         >
                             ỦY BAN NHÂN DÂN PHƯỜNG TÂN SƠN NHÌ
                         </motion.p>
                         <motion.p
-                            className="text-[18px] font-semibold text-blue-700 tracking-wide text-header"
+                            className="text-[12px] font-semibold text-blue-700 tracking-wide text-center text-header"
                             style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.1)' }}
                         >
-                           TRƯỜNG TIỂU HỌC ĐOÀN THỊ ĐIỂM
+                            TRƯỜNG TIỂU HỌC ĐOÀN THỊ ĐIỂM
                         </motion.p>
                     </motion.div>
 
-                    <div className='flex gap-6'>
-                        <a href="#vitri" onClick={(e) => { e.preventDefault(); document.querySelector('#vitri').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Thông tin hành chính</a>
-                        <a href="#truso" onClick={(e) => { e.preventDefault(); document.querySelector('#truso').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Di tích lịch sử</a>
-                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Công trình văn hóa</a>
-                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Phong tục, món ăn
-</a>
-                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className="text-[18px] navigation cursor-pointer">Bài hát</a>
-                        <a href="https://bit.ly/LICHSUDIAPHUONG" >Tài nguyên</a>
+                    <div className='flex gap-4'>
+                        <a href="#vitri" onClick={(e) => { e.preventDefault(); document.querySelector('#vitri').scrollIntoView({ behavior: 'smooth' }); }} className=" navigation cursor-pointer">Thông tin hành chính</a>
+                        <a href="#truso" onClick={(e) => { e.preventDefault(); document.querySelector('#truso').scrollIntoView({ behavior: 'smooth' }); }} className=" navigation cursor-pointer">Công trình văn hóa</a>
+                        <a href="#ditich" onClick={(e) => { e.preventDefault(); document.querySelector('#ditich').scrollIntoView({ behavior: 'smooth' }); }} className=" navigation cursor-pointer">Di tích lịch sử</a>
+                        
+                        <a href="#phongtucmonan" onClick={(e) => { e.preventDefault(); document.querySelector('#phongtucmonan').scrollIntoView({ behavior: 'smooth' }); }} className=" navigation cursor-pointer">Phong tục, món ăn
+                        </a>
+                        <a href="#baihat" onClick={(e) => { e.preventDefault(); document.querySelector('#baihat').scrollIntoView({ behavior: 'smooth' }); }} className=" navigation cursor-pointer">Bài hát</a>
+                        
+                        <a href="https://bit.ly/LICHSUDIAPHUONG" className='navigation' >Tài nguyên</a>
                     </div>
 
                     {/* Right side - Logo with animation */}

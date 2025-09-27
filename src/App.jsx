@@ -42,9 +42,9 @@ function App() {
       <div id='vitri' className='scroll-mt-[100px]'>
         <ContentPage3 />
       </div>
-      {/* <div id='truso' className='scroll-mt-[100px]'> */}
+ 
         <ContentPage4 />
-      {/* </div> */}
+   
 
       <div id='ditich' className='scroll-mt-[100px]'>
         <ContentPage5 />
