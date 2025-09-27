@@ -370,6 +370,138 @@ const ContentPage5 = () => {
         </motion.div>
       </div>
 
+      <motion.div
+        className="text-[32px]  uppercase mt-[30px]  sm:text-[16px] md:text-[54px] font-extrabold !text-yellow-500 text-center mb-4 sm:mb-2 md:mb-8 scroll-mt-[150px]" id="phongtucmonan"
+        initial={{ opacity: 0, y: -60, scale: 0.8 }}
+        animate={{ opacity: 1, y: 0, scale: 1.05 }}
+        transition={{
+          duration: 0.8,
+          type: "spring",
+          stiffness: 120,
+          delay: 0.2
+        }}
+        whileHover={{ scale: 1.12, color: "#2563eb" }}
+      >
+        Phong tục, món ăn
+      </motion.div>
+
+
+
+      <motion.h2
+        className="text-2xl md:text-[30px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        Bánh Xèo
+      </motion.h2>
+
+      <div className="w-full max-w-full flex flex-col md:flex-row mb-8 md:mb-12">
+
+
+        {/* Left Image */}
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="w-full md:w-1/2 px-4 md:px-6 mb-6 md:mb-0"
+        >
+          <div className="relative rounded-lg shadow-xl w-full h-[400px] md:h-[400px]">
+            <img
+              className="w-full h-4/5 md:h-5/6 rounded-t-lg object-contain"
+              src="./banhtrang.jpg"
+              alt="Bản đồ di tích"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 text-center text-black p-2 md:p-3 h-1/5 md:h-1/6 rounded-b-lg flex flex-col justify-center">
+
+              <p className="text-xs">Bánh xèo</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Right Content */}
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
+        >
+          <div className="text-left">
+
+
+            <p className="text-base md:text-[18px] leading-relaxed mb-4">
+              Bánh xèo là món ăn quen thuộc đối với người dân Thành phố. Tên gọi bánh xèo bắt nguồn từ tiếng "xèo xèo" vang lên khi đổ bánh. Món ăn này là sự kết hợp hoàn hảo giữa kết cấu mỏng, giòn cùng hương vị thơm ngon hòa quyện của các nguyên liệu.
+
+            </p>
+
+            <p className="text-base md:text-[18px] leading-relaxed mb-4">
+              Ăn kèm với bánh xèo có bánh tráng mỏng, đồ chua và rau sống. Bánh tráng thường được phơi sương hoặc ủ lá chuối để tăng độ dai. Rau sống ăn kèm thường là xà lách, tía tô, diếp cá,...
+            </p>
+
+          </div>
+        </motion.div>
+      </div>
+
+      <motion.h2
+        className="text-2xl md:text-[30px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        Phở
+      </motion.h2>
+
+      <div className="w-full max-w-full flex flex-col md:flex-row mb-8 md:mb-12">
+
+        {/* Right Content */}
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
+        >
+          <div className="text-left">
+
+            <p className="text-base md:text-[18px] leading-relaxed mb-4">
+              Phở ở Việt Nam ra đời vào những năm đầu của thế kỷ XX và xuất hiện đầu tiên ở Nam Định, Hà Nội. Sau đó, phở được du nhập vào miền Nam và trở thành một món ăn quen thuộc đối với người dân Thành phố Hồ Chí Minh.
+
+            </p>
+            <p className="text-base md:text-[18px] leading-relaxed mb-4">
+              Phở ở miền Nam nói chung và Thành phố Hồ Chí Minh nói riêng có sự khác biệt so với phở ở miền Bắc. Điều này trước hết được thể hiện ở phần nước dùng: phở ở miền Nam thường được cho thêm nước béo vào phần nước dùng để tăng thêm độ béo ngậy, đậm đà cho món ăn; trong khi phở ở miền Bắc thì thiên về nước dùng có độ trong và ít béo.
+            </p>
+
+          </div>
+        </motion.div>
+
+        {/* Left Image */}
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+          className="w-full md:w-1/2 px-4 md:px-6 mb-6 md:mb-0"
+        >
+          <div className="relative rounded-lg shadow-xl w-full h-[400px] md:h-[400px]">
+            <img
+              className="w-full h-4/5 md:h-5/6 rounded-t-lg object-contain"
+              src="./pho.jpg"
+              alt="Bản đồ di tích"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 text-center text-black p-2 md:p-3 h-1/5 md:h-1/6 rounded-b-lg flex flex-col justify-center">
+
+              <p className="text-xs">Phở</p>
+            </div>
+          </div>
+        </motion.div>
+
+
+      </div>
+
 
       {/* New Section with Image Left and Text Right */}
       <motion.div
@@ -599,137 +731,7 @@ const ContentPage5 = () => {
 
       </div>
 
-      <motion.div
-        className="text-[32px]  uppercase mt-[30px]  sm:text-[16px] md:text-[54px] font-extrabold !text-yellow-500 text-center mb-4 sm:mb-2 md:mb-8 scroll-mt-[150px]" id="phongtucmonan"
-        initial={{ opacity: 0, y: -60, scale: 0.8 }}
-        animate={{ opacity: 1, y: 0, scale: 1.05 }}
-        transition={{
-          duration: 0.8,
-          type: "spring",
-          stiffness: 120,
-          delay: 0.2
-        }}
-        whileHover={{ scale: 1.12, color: "#2563eb" }}
-      >
-        Phong tục, món ăn
-      </motion.div>
 
-
-
-      <motion.h2
-        className="text-2xl md:text-[30px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
-        initial={{ y: -50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.2 }}
-      >
-        Bánh Xèo
-      </motion.h2>
-
-      <div className="w-full max-w-full flex flex-col md:flex-row mb-8 md:mb-12">
-
-
-        {/* Left Image */}
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.2 }}
-          className="w-full md:w-1/2 px-4 md:px-6 mb-6 md:mb-0"
-        >
-          <div className="relative rounded-lg shadow-xl w-full h-[400px] md:h-[400px]">
-            <img
-              className="w-full h-4/5 md:h-5/6 rounded-t-lg object-contain"
-              src="./banhtrang.jpg"
-              alt="Bản đồ di tích"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 text-center text-black p-2 md:p-3 h-1/5 md:h-1/6 rounded-b-lg flex flex-col justify-center">
-
-              <p className="text-xs">Bánh xèo</p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Right Content */}
-        <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.2 }}
-          className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
-        >
-          <div className="text-left">
-
-
-            <p className="text-base md:text-[18px] leading-relaxed mb-4">
-              Bánh xèo là món ăn quen thuộc đối với người dân Thành phố. Tên gọi bánh xèo bắt nguồn từ tiếng "xèo xèo" vang lên khi đổ bánh. Món ăn này là sự kết hợp hoàn hảo giữa kết cấu mỏng, giòn cùng hương vị thơm ngon hòa quyện của các nguyên liệu.
-
-            </p>
-
-            <p className="text-base md:text-[18px] leading-relaxed mb-4">
-              Ăn kèm với bánh xèo có bánh tráng mỏng, đồ chua và rau sống. Bánh tráng thường được phơi sương hoặc ủ lá chuối để tăng độ dai. Rau sống ăn kèm thường là xà lách, tía tô, diếp cá,...
-            </p>
-
-          </div>
-        </motion.div>
-      </div>
-
-      <motion.h2
-        className="text-2xl md:text-[30px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
-        initial={{ y: -50, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.2 }}
-      >
-        Phở
-      </motion.h2>
-
-      <div className="w-full max-w-full flex flex-col md:flex-row mb-8 md:mb-12">
-
-        {/* Right Content */}
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.2 }}
-          className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
-        >
-          <div className="text-left">
-
-            <p className="text-base md:text-[18px] leading-relaxed mb-4">
-              Phở ở Việt Nam ra đời vào những năm đầu của thế kỷ XX và xuất hiện đầu tiên ở Nam Định, Hà Nội. Sau đó, phở được du nhập vào miền Nam và trở thành một món ăn quen thuộc đối với người dân Thành phố Hồ Chí Minh.
-
-            </p>
-            <p className="text-base md:text-[18px] leading-relaxed mb-4">
-              Phở ở miền Nam nói chung và Thành phố Hồ Chí Minh nói riêng có sự khác biệt so với phở ở miền Bắc. Điều này trước hết được thể hiện ở phần nước dùng: phở ở miền Nam thường được cho thêm nước béo vào phần nước dùng để tăng thêm độ béo ngậy, đậm đà cho món ăn; trong khi phở ở miền Bắc thì thiên về nước dùng có độ trong và ít béo.
-            </p>
-
-          </div>
-        </motion.div>
-
-        {/* Left Image */}
-        <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.2 }}
-          className="w-full md:w-1/2 px-4 md:px-6 mb-6 md:mb-0"
-        >
-          <div className="relative rounded-lg shadow-xl w-full h-[400px] md:h-[400px]">
-            <img
-              className="w-full h-4/5 md:h-5/6 rounded-t-lg object-contain"
-              src="./pho.jpg"
-              alt="Bản đồ di tích"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 text-center text-black p-2 md:p-3 h-1/5 md:h-1/6 rounded-b-lg flex flex-col justify-center">
-
-              <p className="text-xs">Phở</p>
-            </div>
-          </div>
-        </motion.div>
-
-
-      </div>
 
 
 
