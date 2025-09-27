@@ -17,8 +17,65 @@ const ContentPage3 = () => {
         }}
         whileHover={{ scale: 1.12, color: "#2563eb" }}
       >
-        Phường tân sơn nhì 
+      Vị Trí Phường tân sơn nhì 
       </motion.div>
+
+
+            {/* Thông tin tổng quan */}
+      <motion.div
+        className='flex flex-col justify-center px-2 md:px-6 w-full'
+        initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        <motion.h2
+          className="text-[18px] sm:text-[22px] md:text-[38px] font-bold text-blue-700 mb-2 md:mb-4 text-center"
+          initial={{ y: -30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          Vị trí trước khi sáp nhập
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
+          className="text-[15px] sm:text-[18px] md:text-[26px] leading-relaxed text-gray-800 mb-4 text-center"
+        >
+          <p>
+            <span className="font-bold text-blue-800">Diện tích:</span>
+            <span className="font-extrabold text-red-600 ml-2">~ 1,13 km²</span>
+          </p>
+          <p className="mt-2">
+            <span className="font-bold text-blue-800">Dân cư:</span>
+            <span className="font-extrabold text-green-600 ml-2">~44.500 người</span>
+          </p>
+       
+        </motion.div>
+      </motion.div>
+      <div className="w-full flex flex-grow contentpage3 items-center justify-center">
+        {/* Map Image - responsive */}
+        <motion.div
+          className='flex justify-center items-center px-2 md:px-6 w-full'
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <motion.img
+            src="/truocsapnhap.jpg"
+            alt="Bản đồ Phường Phú Thọ Hòa"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-[900px] rounded-xl shadow-lg object-contain my-4"
+            style={{ maxHeight: '60vh' }}
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          />
+        </motion.div>
+      </div>
       
       {/* Thông tin tổng quan */}
       <motion.div
@@ -34,7 +91,7 @@ const ContentPage3 = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          Vị trí sau khi xác lập
+          Vị trí sau khi sáp nhập
         </motion.h2>
         <motion.div
           initial={{ opacity: 0 }}
@@ -44,15 +101,13 @@ const ContentPage3 = () => {
         >
           <p>
             <span className="font-bold text-blue-800">Diện tích:</span>
-            <span className="font-extrabold text-red-600 ml-2">3,46 km²</span>
+            <span className="font-extrabold text-red-600 ml-2">~ 3,46 km²</span>
           </p>
           <p className="mt-2">
             <span className="font-bold text-blue-800">Dân cư:</span>
             <span className="font-extrabold text-green-600 ml-2">~150.000 người</span>
           </p>
-          <p className="mt-4">
-            Vị trí thuận lợi, kết nối các phường và tuyến đường lớn của quận Tân Phú.
-          </p>
+    
         </motion.div>
       </motion.div>
       <div className="w-full flex flex-grow contentpage3 items-center justify-center">
