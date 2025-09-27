@@ -2,58 +2,63 @@ import { motion } from "motion/react"
 
 const ContentPage5 = () => {
   return (
-    <>
-      <div className="w-full mt-[60px] flex flex-grow contentpage5">
-        {/* Header Section */}
+    <div className="w-full max-w-full overflow-x-hidden">
+      {/* Header Section */}
+      <div className="w-full mt-[40px] md:mt-[60px]">
         <motion.div
-          className='w-full flex justify-between items-center mb-8 px-6'
+          className='w-full flex flex-col md:flex-row justify-between items-center mb-6 md:mb-8 px-4 md:px-6'
           initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.2 }}
         >
           <motion.img
-            className='w-[700px] h-[120px]'
+            className='w-full max-w-[560px] mx-auto md:mx-0 md:w-[700px] h-auto md:h-[120px] mb-4 md:mb-0'
             src="./image_header_page5.png"
             alt="Header"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.3 }}
           />
-          <div className='flex gap-4'>
+          <div className='flex gap-2 md:gap-4 flex-shrink-0'>
             <motion.img
-              className='w-[120px] h-[120px]'
+              className='w-[60px] h-[60px] md:w-[120px] md:h-[120px]'
               src="./logo_truong.png"
               alt="Logo trường"
               animate={{ rotate: [0, 5, 0, -5, 0] }}
-
             />
             <motion.img
-              className='w-[120px] h-[120px]'
+              className='w-[60px] h-[60px] md:w-[120px] md:h-[120px]'
               src="/huy_hieu_doan.png"
               alt="Huy hiệu đoàn"
               animate={{ rotate: [0, -5, 0, 5, 0] }}
-
             />
           </div>
         </motion.div>
       </div>
 
       {/* Content 1 - Đình thần Tân Sơn Nhì */}
-      <h1 className="text-[45px] font-bold text-red-600 mb-12 text-center">ĐÌNH THẦN TÂN SƠN NHÌ</h1>
-      <div className="w-full flex flex-grow mb-12 contentpage5-section1">
+      <motion.h2
+        className="text-2xl md:text-[45px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        ĐÌNH THẦN TÂN SƠN NHÌ
+      </motion.h2>
+
+      <div className="w-full max-w-full flex flex-col md:flex-row mb-8 md:mb-12 contentpage5-section1">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.2 }}
-          className="basis-1/2 flex flex-col px-6"
+          className="w-full md:flex-1 flex flex-col px-4 md:px-6 mb-6 md:mb-0"
         >
-          
-
           {/* Video Player */}
           <motion.div
-            className="mb-6"
+            className="mb-6 w-full h-[250px] md:h-[250px]"
             animate={{ y: [0, -10, 0] }}
             transition={{
               duration: 2.5,
@@ -62,24 +67,24 @@ const ContentPage5 = () => {
               ease: "easeInOut"
             }}
           >
-            <div className="relative bg-black rounded-lg overflow-hidden shadow-xl">
-              <div className="aspect-video">
+            <div className="relative bg-black rounded-lg overflow-hidden shadow-xl w-full">
+              <div className="aspect-video w-full">
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/5xIPaGSaTao?si=phOfaZ_94lMsb4r9"
+                  src="https://www.youtube.com/embed/5xIPaGSaTao?si=DicEWidgOInm2PKt"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  className="rounded-lg"
+                  className="rounded-t-lg w-full h-full"
                 ></iframe>
               </div>
-              <div className="p-3 bg-white text-center">
-                <p className="text-lg font-medium">Video Hội thi</p>
-                <p className="text-sm text-gray-600">Công dân Thành phố với hành trình văn hóa năm 2023</p>
-                <p className="text-sm text-gray-500">Chi đoàn Tiểu học Tân Điền</p>
+              <div className="p-2 md:p-3 bg-white text-center">
+                <p className="text-sm md:text-lg font-medium">Video Hội thi</p>
+                <p className="text-xs md:text-sm text-gray-600">Công dân Thành phố với hành trình văn hóa năm 2023</p>
+                <p className="text-xs md:text-sm text-gray-500">Chi đoàn Tiểu học Tân Điền</p>
               </div>
             </div>
           </motion.div>
@@ -90,42 +95,57 @@ const ContentPage5 = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.2 }}
-          className="basis-1/2 flex flex-col justify-center px-6"
+          className="w-full md:flex-1 flex flex-col justify-center px-4 md:px-6"
         >
           <div className="text-left">
-            <p className="text-[18px] leading-relaxed mb-4">
-              - Đình được xây dựng năm <span className="font-semibold">1805</span>.
+            <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
+              - Đình Thần Tân Sơn Nhì, tọa lạc tại số 207 đường Tân Kỳ Tân Quý,
+              phường Tân Sơn Nhì, Quận Tân Phú, TP. Hồ Chí Minh,
+              là một di tích lịch sử và văn hóa quan trọng có tuổi đời hơn 200 năm.
+
             </p>
-            <p className="text-[18px] leading-relaxed mb-4">
-              - Là một trong những địa điểm tập hợp thanh niên xa; nơi che chở, nuôi giấu cán bộ bầm trụ đánh địch.
+            <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
+              - Ngôi đình cổ kính này không chỉ là nơi thờ cúng tín ngưỡng mà còn là "chứng nhân" cho quá trình khai phá và phát triển của vùng đất.
             </p>
-            <p className="text-[18px] leading-relaxed">
-              - Được công nhận là di tích lịch sử cấp Thành phố (ngày <span className="font-semibold">20/10/2016</span>).
+            <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
+              - Đình được công nhận là Di tích lịch sử cấp thành phố, chủ yếu thờ Thành Hoàng Bổn Cảnh,
+              vị thần bảo hộ cho dân làng, cùng với các vị Tiền hiền và Hậu hiền đã có công lập làng, mở đất.
+            </p>
+            <p className="text-base md:text-[18px] leading-relaxed">
+              - Hàng năm, Đình Tân Sơn Nhì tổ chức lễ cúng đình, đặc biệt là Lễ Kỳ Yên (cầu an) với ý nghĩa cầu mong quốc thái dân an,
+              mưa thuận gió hòa, thu hút đông đảo người dân địa phương và du khách tham gia, qua đó duy trì và phát huy các giá trị văn hóa truyền thống của cộng đồng.
             </p>
           </div>
         </motion.div>
       </div>
+      <motion.h2
+        className="text-2xl md:text-[45px] font-bold text-red-600 mb-6 md:mb-12 text-center px-4"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        BIA TRUYỀN THỐNG CẦU XÉO
+      </motion.h2>
 
       {/* Content 2 - Bia truyền thống Cầu Xéo */}
-      <div className="w-full flex flex-grow contentpage5-section2">
+      <div className="w-full max-w-full flex flex-col md:flex-row mb-8 md:mb-12 contentpage5-section2">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.2 }}
-          className="basis-1/2 flex flex-col px-6"
+          className="w-full md:flex-1 flex flex-col px-4 md:px-6 mb-6 md:mb-0 order-2 md:order-1"
         >
-          <h2 className="text-[45px] font-bold text-red-600 mb-6 text-center">BIA TRUYỀN THỐNG CẦU XÉO</h2>
-
           <div className="text-left">
-            <p className="text-[18px] leading-relaxed mb-4">
-              - Khi xưa đây là khu vực có địa thế hiểm trở, có lực lượng quân chúng yêu nước cốt cán, kiên trung với cách mạng.
+            <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
+              - Khu vực Cầu Xéo khi xưa có địa thế hiểm trở, được bao bọc bởi kênh rạch, tạo thành căn cứ lõm an toàn với lực lượng quần chúng yêu nước cốt cán, kiên trung với cách mạng.
             </p>
-            <p className="text-[18px] leading-relaxed mb-4">
-              - Là một trong những nơi có chi bộ Đảng đầu tiên ra đời vào năm <span className="font-semibold">1930</span>.
+            <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
+              - Là một trong những nơi có <span className="font-semibold">Chi bộ Đảng Cộng sản đầu tiên</span> ra đời vào năm <span className="font-semibold">1930</span> (Chi bộ Gò Dầu - Tân Sơn Nhì), đóng vai trò là hạt nhân cách mạng sớm nhất.
             </p>
-            <p className="text-[18px] leading-relaxed">
-              - Là địa điểm hội họp, đi về của đảng viên và các đồng chí Trung ương trong thời kỳ vận động cách mạng như: <span className="font-semibold">Hà Huy Tập, Nguyễn Thị Minh Khai, Võ Văn Tần</span>....
+            <p className="text-base md:text-[18px] leading-relaxed">
+              - Là tuyến liên lạc chiến lược, địa điểm hội họp, đi về quan trọng của đảng viên và các đồng chí Trung ương trong thời kỳ vận động cách mạng như: <span className="font-semibold">Hà Huy Tập</span> (Tổng Bí thư), <span className="font-semibold">Nguyễn Thị Minh Khai</span>, <span className="font-semibold">Võ Văn Tần</span>....
             </p>
           </div>
         </motion.div>
@@ -135,12 +155,12 @@ const ContentPage5 = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.2 }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="basis-1/2 flex justify-center items-center px-6"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="w-full md:flex-1 flex justify-center items-center px-4 md:px-6 order-1 md:order-2"
         >
           <motion.div
-            className="w-[350px] h-[300px]"
+            className="w-full max-w-[400px] md:max-w-none h-[300px] md:h-[380px]"
             animate={{ y: [0, -15, 0] }}
             transition={{
               duration: 3,
@@ -150,53 +170,25 @@ const ContentPage5 = () => {
               delay: 0.5
             }}
           >
-            <div className="relative overflow-hidden rounded-lg shadow-xl w-full h-full">
+            <div className="relative rounded-lg shadow-xl w-full h-full">
               {/* Bia image background */}
-              <div className="aspect-square bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 flex items-center justify-center w-full h-4/5 relative">
-                {/* Monument/Bia structure */}
-                <div className="relative w-full h-full flex items-center justify-center">
-                  {/* Sky and buildings background */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-blue-300 to-blue-400"></div>
-
-                  {/* Buildings silhouette */}
-                  <div className="absolute bottom-0 left-0 right-0 h-1/3">
-                    <div className="w-full h-full bg-yellow-400 relative">
-                      {/* Palm trees */}
-                      <div className="absolute right-4 top-2">
-                        <div className="w-2 h-8 bg-green-700"></div>
-                        <div className="w-6 h-3 bg-green-600 rounded-full -mt-1"></div>
-                      </div>
-                      <div className="absolute right-8 top-4">
-                        <div className="w-2 h-6 bg-green-700"></div>
-                        <div className="w-5 h-2 bg-green-600 rounded-full -mt-1"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Monument pillar */}
-                  <div className="absolute bottom-8 left-1/3 w-12 h-24 bg-gray-600 shadow-lg"></div>
-                  {/* Flag */}
-                  <div className="absolute bottom-20 left-1/3 ml-12 w-8 h-4 bg-red-500"></div>
-                </div>
-              </div>
+              <img
+                className='w-full h-4/5 md:h-5/6 rounded-t-lg'
+                src="./bia_tuong_niem.jpg"
+                alt="Bia tượng niệm"
+              />
 
               {/* Caption */}
-              <motion.div
-                className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-90 text-white p-3 h-1/5"
-                initial={{ y: 100 }}
-                whileInView={{ y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: false, amount: 0.2 }}
-              >
-                <p className="text-sm font-medium">Bia tượng niệm Lịch sử -</p>
+              <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 text-center text-black p-2 md:p-3 h-1/5 md:h-1/6 rounded-b-lg flex flex-col justify-center">
+                <p className="text-xs md:text-sm font-medium">Bia tượng niệm Lịch sử -</p>
                 <p className="text-xs">Bia Truyền thống Cầu Xéo</p>
                 <p className="text-xs">(Số 327 Tân Kỳ Tân Quý)</p>
-              </motion.div>
+              </div>
             </div>
           </motion.div>
         </motion.div>
       </div>
-    </>
+    </div>
   )
 }
 
