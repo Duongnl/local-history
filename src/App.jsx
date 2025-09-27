@@ -1,6 +1,7 @@
 
 import './App.css'
 import ContentPage1 from './components/page1/ContenPage1'
+import ContentPage5 from './components/page5/ContentPage5'
 import HeaderWeb from './components/share/HeaderWeb'
 
 
@@ -14,6 +15,7 @@ function App() {
       <HeaderWeb/>
       <ContentPage1/>
 
+      <ContentPage5/>
     </>
   )
 }
