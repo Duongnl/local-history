@@ -99,7 +99,7 @@ const ContentPage5 = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="w-full md:flex-1 flex flex-col justify-center px-4 md:px-6"
         >
-          <div className="text-left">
+          <div className="text-justify">
             <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
               - Đình Thần Tân Sơn Nhì, tọa lạc tại số 207 đường Tân Kỳ Tân Quý,
               phường Tân Sơn Nhì, TP. Hồ Chí Minh,
@@ -139,7 +139,7 @@ const ContentPage5 = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="w-full md:flex-1 flex flex-col px-4 md:px-6 mb-6 md:mb-0 order-2 md:order-1"
         >
-          <div className="text-left">
+          <div className="text-justify">
             <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
               - Khu vực Cầu Xéo khi xưa có địa thế hiểm trở, được bao bọc bởi kênh rạch, tạo thành căn cứ lõm an toàn với lực lượng quần chúng yêu nước cốt cán, kiên trung với cách mạng.
             </p>
@@ -248,7 +248,7 @@ const ContentPage5 = () => {
             viewport={{ once: false, amount: 0.2 }}
           >
 
-            <p className="text-base md:text-lg text-gray-700 mb-4">
+            <p className="text-base md:text-lg text-gray-700 mb-4 text-justify">
               Liệt sĩ Trần Văn Ơn (1931-1950) là học sinh trường Pétrus Ký (nay là Trường Trung học phổ thông chuyên Lê Hồng Phong) bị chính quyền Pháp nổ súng bắn chết trong khi lãnh đạo phong trào biểu tình của học sinh – sinh viên Sài Gòn vào ngày 09-01-1950.
               Cái chết của liệt sĩ Trần Văn Ơn đã gây tiếng vang lớn, tác động rộng khắp trong phong trào đấu tranh của nhân dân Sài Gòn. Hơn 300 000 người dân Sài Gòn đã xuống đường tham gia và ủng hộ lễ tang của Trần Văn Ơn. Từ đó, ngày 09-01 hằng năm được chọn làm Ngày truyền thống Học sinh - Sinh viên Việt Nam.
             </p>
@@ -278,7 +278,7 @@ const ContentPage5 = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="w-full md:flex-1 flex flex-col px-4 md:px-6 mb-6 md:mb-0 order-2 md:order-1"
         >
-          <div className="text-left">
+          <div className="text-justify">
             <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
               - Đài tưởng niệm 82 liệt sĩ hy sinh Mậu Thân 1968            </p>
             <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
@@ -362,7 +362,7 @@ const ContentPage5 = () => {
               <p className="text-white/90 text-sm md:text-base">
                 Nhà trưng bày di tích lịch sử Địa Đạo Phú Thọ Hòa
               </p>
-              <p className="text-white/90 text-sm md:text-base">
+              <p className="text-white/90 text-sm md:text-base text-justify">
                 Địa đạo Phú Thọ Hòa  là một trong những địa đạo nổi tiếng, được xây dựng từ thời kháng chiến chống Pháp và phát huy vai trò quan trọng trong kháng chiến chống Mỹ. Công trình là minh chứng cho tinh thần kiên cường, sáng tạo của quân và dân Sài Gòn – Gia Định, đồng thời là di tích lịch sử – văn hóa, giáo dục truyền thống yêu nước cho các thế hệ hôm nay.
               </p>
             </div>
@@ -429,7 +429,7 @@ const ContentPage5 = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
         >
-          <div className="text-left">
+          <div className="text-justify">
 
 
             <p className="text-base md:text-[18px] leading-relaxed mb-4">
@@ -465,7 +465,7 @@ const ContentPage5 = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
         >
-          <div className="text-left">
+          <div className="text-justify">
 
             <p className="text-base md:text-[18px] leading-relaxed mb-4">
               Phở ở Việt Nam ra đời vào những năm đầu của thế kỷ XX và xuất hiện đầu tiên ở Nam Định, Hà Nội. Sau đó, phở được du nhập vào miền Nam và trở thành một món ăn quen thuộc đối với người dân Thành phố Hồ Chí Minh.
@@ -539,7 +539,7 @@ const ContentPage5 = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
         >
-          <div className="text-left">
+          <div className="text-justify">
 
             <p className="text-base md:text-[18px] leading-relaxed mb-4">
               Ca khúc đánh dấu bước chuyển mình vào kỷ nguyên mới của đất nước – thời kỳ hội nhập, phát triển mạnh mẽ, trong bối cảnh thực hiện mô hình chính quyền đô thị, đổi mới toàn diện giáo dục và xã hội.
@@ -614,7 +614,7 @@ const ContentPage5 = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
         >
-          <div className="text-left">
+          <div className="text-justify">
 
 
             <p className="text-base md:text-[18px] leading-relaxed mb-4">
@@ -668,7 +668,7 @@ const ContentPage5 = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
         >
-          <div className="text-left">
+          <div className="text-justify">
 
 
             <p className="text-base md:text-[18px] leading-relaxed mb-4">
@@ -700,7 +700,7 @@ const ContentPage5 = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-6"
         >
-          <div className="text-left">
+          <div className="text-justify">
 
             <p className="text-base md:text-[18px] leading-relaxed mb-4">
               Ca khúc là khúc khải hoàn tươi sáng dành cho tuổi học trò. Những hình ảnh quen thuộc “trống vang rộn rã”, “cờ bay trong nắng” hòa cùng lời ca trong trẻo đã tái hiện sinh động một buổi sáng đến trường rộn ràng và yêu thương.
