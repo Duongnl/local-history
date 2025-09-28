@@ -102,7 +102,7 @@ const ContentPage5 = () => {
           <div className="text-left">
             <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
               - Đình Thần Tân Sơn Nhì, tọa lạc tại số 207 đường Tân Kỳ Tân Quý,
-              phường Tân Sơn Nhì, Quận Tân Phú, TP. Hồ Chí Minh,
+              phường Tân Sơn Nhì, TP. Hồ Chí Minh,
               là một di tích lịch sử và văn hóa quan trọng có tuổi đời hơn 200 năm.
 
             </p>
@@ -249,7 +249,7 @@ const ContentPage5 = () => {
           >
 
             <p className="text-base md:text-lg text-gray-700 mb-4">
-              Liệt sĩ Trần Văn Ơn (1931-1950) là học sinh trường Pétrus Ký (nay là Trường Trung học phổ thông chuyên Lê Hồng Phong, Quận 5) bị chính quyền Pháp nổ súng bắn chết trong khi lãnh đạo phong trào biểu tình của học sinh – sinh viên Sài Gòn vào ngày 09-01-1950.
+              Liệt sĩ Trần Văn Ơn (1931-1950) là học sinh trường Pétrus Ký (nay là Trường Trung học phổ thông chuyên Lê Hồng Phong) bị chính quyền Pháp nổ súng bắn chết trong khi lãnh đạo phong trào biểu tình của học sinh – sinh viên Sài Gòn vào ngày 09-01-1950.
               Cái chết của liệt sĩ Trần Văn Ơn đã gây tiếng vang lớn, tác động rộng khắp trong phong trào đấu tranh của nhân dân Sài Gòn. Hơn 300 000 người dân Sài Gòn đã xuống đường tham gia và ủng hộ lễ tang của Trần Văn Ơn. Từ đó, ngày 09-01 hằng năm được chọn làm Ngày truyền thống Học sinh - Sinh viên Việt Nam.
             </p>
 
@@ -282,9 +282,9 @@ const ContentPage5 = () => {
             <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
               - Đài tưởng niệm 82 liệt sĩ hy sinh Mậu Thân 1968            </p>
             <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
-              - Nằm trong khuôn viên Đài liệt sĩ quận Tân Phú thuộc phường Tân Phú, thành phố Hồ Chí Minh            </p>
+              - Nằm trong khuôn viên Đài liệt sĩ  thuộc thành phố Hồ Chí Minh            </p>
             <p className="text-base md:text-[18px] leading-relaxed mb-3 md:mb-4">
-              - Với giá trị lịch sử và ý nghĩa nhân văn sâu sắc, Đài tưởng niệm Liệt sĩ Quận Tân Phú đã trở thành một địa chỉ đỏ, góp phần bồi đắp lòng yêu nước, niềm tự hào dân tộc và ý thức trách nhiệm xây dựng, bảo vệ Tổ quốc trong giai đoạn mới.
+              - Với giá trị lịch sử và ý nghĩa nhân văn sâu sắc, Đài tưởng niệm Liệt sĩ  đã trở thành một địa chỉ đỏ, góp phần bồi đắp lòng yêu nước, niềm tự hào dân tộc và ý thức trách nhiệm xây dựng, bảo vệ Tổ quốc trong giai đoạn mới.
             </p>
           </div>
         </motion.div>
@@ -363,7 +363,7 @@ const ContentPage5 = () => {
                 Nhà trưng bày di tích lịch sử Địa Đạo Phú Thọ Hòa
               </p>
               <p className="text-white/90 text-sm md:text-base">
-                Địa đạo Phú Thọ Hòa (quận Tân Phú, TP.HCM) là một trong những địa đạo nổi tiếng, được xây dựng từ thời kháng chiến chống Pháp và phát huy vai trò quan trọng trong kháng chiến chống Mỹ. Công trình là minh chứng cho tinh thần kiên cường, sáng tạo của quân và dân Sài Gòn – Gia Định, đồng thời là di tích lịch sử – văn hóa, giáo dục truyền thống yêu nước cho các thế hệ hôm nay.
+                Địa đạo Phú Thọ Hòa  là một trong những địa đạo nổi tiếng, được xây dựng từ thời kháng chiến chống Pháp và phát huy vai trò quan trọng trong kháng chiến chống Mỹ. Công trình là minh chứng cho tinh thần kiên cường, sáng tạo của quân và dân Sài Gòn – Gia Định, đồng thời là di tích lịch sử – văn hóa, giáo dục truyền thống yêu nước cho các thế hệ hôm nay.
               </p>
             </div>
           </motion.div>

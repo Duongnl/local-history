@@ -48,7 +48,7 @@ const Header = () => {
                         </a>
                         <a href="#baihat" onClick={(e) => { e.preventDefault(); document.querySelector('#baihat').scrollIntoView({ behavior: 'smooth' }); }} className=" navigation cursor-pointer">Bài hát</a>
                         
-                        <a href="https://bit.ly/LICHSUDIAPHUONG" className='navigation' >Tài nguyên</a>
+                        <a href="https://bit.ly/LICHSUDIAPHUONG" className='navigation' >Sưu tầm</a>
                     </div>
 
                     {/* Right side - Logo with animation */}

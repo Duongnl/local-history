@@ -30,7 +30,7 @@ const ContentPage1 = () => {
 
                         <div className="flex justify-center gap-6 mt-12">
                             <motion.a
-                                href="https://padlet.com/tranthilan15102008/l-p-5-8-6zazfadntgcyz1bl?frame_id=page%3ArlkGuQUHtXSxCwD8cSG83"
+                                href="https://padlet.com/bichlen94/t-i-nguy-n-efnfsajj37rq4it5"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-lg rounded-full font-medium shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all duration-300 border border-blue-400"
@@ -42,23 +42,9 @@ const ContentPage1 = () => {
                                 whileTap={{ scale: 0.98 }}
                             >
                                 {/* <span className="mr-2">👋</span> */}
-                                <span className="text-white">Giới thiệu</span>
+                                <span className="text-white">Tài nguyên</span>
                             </motion.a>
-                            <motion.a
-                                href="https://padlet.com/tranthilan15102008/l-p-5-8-kqhexosrnay9dgf2"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white text-lg rounded-full font-medium shadow-lg shadow-green-500/30 hover:shadow-green-500/50 transition-all duration-300 border border-green-400"
-                                style={{ textShadow: '0 1px 2px rgba(0,0,0,0.2)' }}
-                                whileHover={{
-                                    scale: 1.02,
-                                    textShadow: "0 0 8px rgba(255,255,255,0.5)"
-                                }}
-                                whileTap={{ scale: 0.98 }}
-                            >
-                                {/* <span className="mr-2">📚</span> */}
-                                <span className="text-white">Học tập</span>
-                            </motion.a>
+                           
                         </div>
 
                         <div className="w-full flex justify-center mt-[90px] div-student">
