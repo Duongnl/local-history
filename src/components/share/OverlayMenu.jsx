@@ -95,7 +95,7 @@ export default function OverlayMenu() {
                             </a>
 
                             <a href="https://bit.ly/LICHSUDIAPHUONG"  className="text-[18px] cursor-pointer" >Tài nguyên</a>
-
+                                 <a href="https://bit.ly/LICHSUDIAPHUONG" className='text-[18px] cursor-pointer' >Sưu tầm</a>
 
 
                         </motion.div>
